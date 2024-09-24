@@ -33,6 +33,11 @@ export default defineNuxtModule<RosettaNuxtOptions>({
   async setup(options, nuxt) {
     const logger = useLogger();
 
+    if (Object.keys(options.messages).length === 0) {
+      logger.info("No messages to translate, skipping nuxt-rosetta...");
+      return;
+    }
+
     const codes = [options.reference, ...options.translations];
     const cacheDir = `${nuxt.options.rootDir}/${options.cache}`;
 
