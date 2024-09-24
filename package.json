@@ -1,0 +1,61 @@
+{
+  "name": "nuxt-rosetta",
+  "type": "module",
+  "version": "0.0.1",
+  "author": {
+    "name": "Alex Thorwaldson",
+    "email": "alex@zoobz.io",
+    "url": "https://zoobz.io"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoobzio/nuxt-rosetta.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zoobzio/nuxt-rosetta/issues"
+  },
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./.dist/module.d.ts",
+      "import": "./.dist/module.mjs"
+    }
+  },
+  "module": ".dist/module.mjs",
+  "types": ".dist/module.d.ts",
+  "files": [
+    ".dist",
+    "runtime"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "nuxi typecheck",
+    "build": "unbuild .",
+    "stub": "unbuild . --stub",
+    "export:sizes": "npx export-size . -r",
+    "prepare": "nuxt prepare",
+    "release": "changelogen --release && git push --follow-tags"
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.11.1",
+    "@parvineyvazov/json-translator": "^3.1.1"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.5.7",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "changelogen": "^0.5.5",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "nuxt": "^3.13.1",
+    "prettier": "^3.3.3",
+    "typescript": "5.5.4",
+    "unbuild": "^2.0.0",
+    "vue": "^3.5.6"
+  }
+}
