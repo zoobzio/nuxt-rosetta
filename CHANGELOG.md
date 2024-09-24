@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/zoobzio/nuxt-rosetta/compare/v0.0.3...v0.0.4)
+
+### 🩹 Fixes
+
+- @nuxt/schema dependency ([6b0e4b6](https://github.com/zoobzio/nuxt-rosetta/commit/6b0e4b6))
+
+### ❤️ Contributors
+
+- Alexander Thorwaldson ([@zoobzio](http://github.com/zoobzio))
+
 ## v0.0.3
 
 [compare changes](https://github.com/zoobzio/nuxt-rosetta/compare/v0.0.2...v0.0.3)
