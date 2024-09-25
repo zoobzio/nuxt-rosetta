@@ -1,3 +1,5 @@
+import { defineEventHandler } from "h3";
+
 export default defineEventHandler(async (event) => {
   const code = getRouterParam(event, "code");
   if (!code || code.length !== 2) {
