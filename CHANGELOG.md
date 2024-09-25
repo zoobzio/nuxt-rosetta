@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/zoobzio/nuxt-rosetta/compare/v0.0.4...v0.0.5)
+
+### 🩹 Fixes
+
+- Explicit h3 import ([7e69cfc](https://github.com/zoobzio/nuxt-rosetta/commit/7e69cfc))
+
+### ❤️ Contributors
+
+- Alexander Thorwaldson ([@zoobzio](http://github.com/zoobzio))
+
 ## v0.0.4
 
 [compare changes](https://github.com/zoobzio/nuxt-rosetta/compare/v0.0.3...v0.0.4)
