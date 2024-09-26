@@ -1,7 +1,9 @@
+// @ts-ignore
 import { language, languages, messages } from "#build/rosetta.config.mjs";
 import type { RosettaCode, RosettaMessage } from "#build/types/rosetta.d.ts";
 
-const codes = languages.map((l) => l.code);
+const options = languages as { name: string; code: RosettaCode }[];
+const codes = options.map((l) => l.code);
 
 export type RosettaLanguageOption = {
   key: RosettaCode;
@@ -26,7 +28,9 @@ export function useRosetta() {
 }
 
 export function isRosettaCode(code: unknown): code is RosettaCode {
-  return typeof code === "string" && codes.includes(code);
+  return (
+    typeof code === "string" && codes.map((c) => c.toString()).includes(code)
+  );
 }
 
 export function isRosettaMessage(message: unknown): message is RosettaMessage {
@@ -42,7 +46,7 @@ export function isRosettaScheme(scheme: unknown): scheme is RosettaScheme {
 }
 
 export function useRosettaLanguageOptions(): RosettaLanguageOption[] {
-  return languages.map((l) => ({
+  return options.map((l) => ({
     key: l.code as RosettaCode,
     label: l.name,
   }));

@@ -9,4 +9,7 @@ export default createConfigForNuxt({
   },
 }).append(prettierConfig, prettierPlugin, {
   ignores: ["**/.dist", "**/.nuxt"],
+  rules: {
+    "@typescript-eslint/ban-ts-comment": "warn",
+  },
 });
