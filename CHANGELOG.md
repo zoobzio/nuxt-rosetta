@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.6
+
+[compare changes](https://github.com/zoobzio/nuxt-rosetta/compare/v0.0.5...v0.0.6)
+
+### 🩹 Fixes
+
+- Downstream lint ([7dab070](https://github.com/zoobzio/nuxt-rosetta/commit/7dab070))
+
+### ❤️ Contributors
+
+- Alexander Thorwaldson ([@zoobzio](http://github.com/zoobzio))
+
 ## v0.0.5
 
 [compare changes](https://github.com/zoobzio/nuxt-rosetta/compare/v0.0.4...v0.0.5)
