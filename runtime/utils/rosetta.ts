@@ -1,4 +1,5 @@
-import { useState } from "#app";
+import { useState, useFetch } from "#app";
+import { reactive } from "vue";
 // @ts-ignore
 import { language, languages, messages } from "#build/rosetta.config.mjs";
 import type { RosettaCode, RosettaMessage } from "#build/types/rosetta.d.ts";
@@ -55,9 +56,9 @@ export function useRosettaLanguageOptions(): RosettaLanguageOption[] {
 
 export async function setRosettaLanguage(code: RosettaCode) {
   const rosetta = useRosetta();
-  const data = await $fetch(`/api/rosetta/${code}`);
-  if (isRosettaScheme(data)) {
-    rosetta.messages.value = data;
+  const { data } = await useFetch(`/api/rosetta/${code}`);
+  if (isRosettaScheme(data.value)) {
+    rosetta.messages.value = data.value;
     rosetta.language.value = code;
   }
   return rosetta;
