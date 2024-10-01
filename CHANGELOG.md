@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.8
+
+[compare changes](https://github.com/zoobzio/nuxt-rosetta/compare/v0.0.7...v0.0.8)
+
+### 🩹 Fixes
+
+- More imports ([295ac1d](https://github.com/zoobzio/nuxt-rosetta/commit/295ac1d))
+
+### ❤️ Contributors
+
+- Alexander Thorwaldson ([@zoobzio](http://github.com/zoobzio))
+
 ## v0.0.7
 
 [compare changes](https://github.com/zoobzio/nuxt-rosetta/compare/v0.0.6...v0.0.7)
