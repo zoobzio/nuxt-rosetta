@@ -1,3 +1,4 @@
+import { useState } from "#app";
 // @ts-ignore
 import { language, languages, messages } from "#build/rosetta.config.mjs";
 import type { RosettaCode, RosettaMessage } from "#build/types/rosetta.d.ts";
