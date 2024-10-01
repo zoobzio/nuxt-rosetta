@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.7
+
+[compare changes](https://github.com/zoobzio/nuxt-rosetta/compare/v0.0.6...v0.0.7)
+
+### 🩹 Fixes
+
+- Import useState ([15d5b80](https://github.com/zoobzio/nuxt-rosetta/commit/15d5b80))
+
+### ❤️ Contributors
+
+- Alexander Thorwaldson ([@zoobzio](http://github.com/zoobzio))
+
 ## v0.0.6
 
 [compare changes](https://github.com/zoobzio/nuxt-rosetta/compare/v0.0.5...v0.0.6)
